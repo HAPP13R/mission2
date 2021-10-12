@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rounded navi</title>
+    <style>
+        ul.navi li {
+            list-style-type: none;
+            display: block;
+            width: 8em;
+            height: 3em;
+            float: left;
+            text-align: center;
+            font-family: "Lucida Grande", sans-serif;
+            border: 1px #818181 solid;
+            box-shadow: 1px 1px 1px #bbb;
+        }
+        ul.navi li a {
+            display: block;
+            padding: .5em;
+            padding-top: .8em;
+            text-decoration: none;
+            color: #292929;
+            text-shadow: 1px 1px 1px #ccc;
+        }
+        ul.navi li:hover {
+            background-color: #333;
+        }
+        ul.navi li:hover > a {
+            color: white;
+        }
+        ul.navi li:first-child {
+            border-top-left-radius: 1em;
+            border-bottom-left-radius: 1em;
+        }
+        ul.navi li:last-child {
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 1em;
+        }
+        /* ul.navi li:nth-last-of-type(2) {
+            border-top-left-radius: 1em;
+            border-bottom-left-radius: 1em;
+        }
+        ul.navi li:nth-of-type(2) {
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 1em;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="navi">
+            <li class="home"><a href="#">Home</a></li>
+            <li class="html"><a href="#">HTML5</a></li>
+            <li class="css"><a href="#">CSS</a></li>
+            <li id="jquery"><a href="#">JQuery</a></li>
+        </ul>
+    </div>
+</body>
+</html>
